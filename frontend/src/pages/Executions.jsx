@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react'
-import AppShell from '../components/AppShell'
+import AppShell from '../components/Appshell'
 import ExecutionTimeline from '../components/ExecutionTimeline'
 import { executionAPI, workflowAPI } from '../utils/api'
 import '../styles/Executions.css'

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import AppShell from '../components/AppShell'
+import AppShell from '../components/Appshell'
 import { useAuth } from '../context/AuthContext'
 import '../styles/Settings.css'
 import '../styles/Dashboard.css'

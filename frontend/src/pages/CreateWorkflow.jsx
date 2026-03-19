@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
-import AppShell from '../components/AppShell'
+import AppShell from '../components/Appshell'
 import { workflowAPI } from '../utils/api'
 import '../styles/CreateWorkflow.css'
 import '../styles/Dashboard.css'

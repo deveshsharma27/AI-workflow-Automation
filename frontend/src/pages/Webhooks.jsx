@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react'
 import { Link } from 'react-router-dom'
-import AppShell from '../components/AppShell'
+import AppShell from '../components/Appshell'
 import { workflowAPI, webhookAPI } from '../utils/api'
 import '../styles/Webhooks.css'
 import '../styles/Dashboard.css'

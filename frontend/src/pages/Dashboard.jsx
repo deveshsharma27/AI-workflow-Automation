@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import AppShell from '../components/AppShell'
+import AppShell from '../components/Appshell'
 import { workflowAPI, executionAPI } from '../utils/api'
 import { useAuth } from '../context/AuthContext'
 import '../styles/Dashboard.css'

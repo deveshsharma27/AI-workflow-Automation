@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useCallback, useMemo } from 'react'
 import { useParams, useNavigate, Link } from 'react-router-dom'
-import AppShell from '../components/AppShell'
+import AppShell from '../components/Appshell'
 import { workflowAPI, executionAPI } from '../utils/api'
 import '../styles/WorkflowDetail.css'
 import '../styles/CreateWorkflow.css'

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import AppShell from '../components/AppShell'
+import AppShell from '../components/Appshell'
 import ExecutionTimeline from '../components/ExecutionTimeline'
 import { executionAPI } from '../utils/api'
 import '../styles/Executions.css'
