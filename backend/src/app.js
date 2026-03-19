@@ -11,7 +11,7 @@ const app = express();
 
 // ✅ CHANGE 1 — CORS updated
 // Allows both local dev (localhost:5173) and your Netlify production URL
-import cors from "cors";
+
 
 const allowedOrigins = [
   "http://localhost:5173",
