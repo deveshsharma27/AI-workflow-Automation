@@ -1,0 +1,32 @@
+.user-panel{
+  position:fixed;
+  top:15px;
+  right:25px;
+
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.user-name{
+  color:#e5e7eb;
+  font-size:14px;
+}
+
+.login-btn{
+  background:#6366f1;
+  border:none;
+  padding:6px 12px;
+  border-radius:6px;
+  color:white;
+  cursor:pointer;
+}
+
+.logout-btn{
+  background:#ef4444;
+  border:none;
+  padding:6px 12px;
+  border-radius:6px;
+  color:white;
+  cursor:pointer;
+}

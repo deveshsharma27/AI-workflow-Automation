@@ -1,0 +1,26 @@
+.status{
+  padding:4px 10px;
+  border-radius:6px;
+  font-size:12px;
+  font-weight:500;
+}
+
+.status-success{
+  background:#064e3b;
+  color:#22c55e;
+}
+
+.status-running{
+  background:#1e3a8a;
+  color:#3b82f6;
+}
+
+.status-error{
+  background:#7f1d1d;
+  color:#ef4444;
+}
+
+.status-pending{
+  background:#422006;
+  color:#f59e0b;
+}

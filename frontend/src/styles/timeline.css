@@ -1,0 +1,27 @@
+.timeline{
+  margin-top:20px;
+  border:1px solid var(--border);
+  border-radius:8px;
+  overflow:hidden;
+}
+
+.execution-step{
+  display:flex;
+  justify-content:space-between;
+  padding:12px;
+  border-bottom:1px solid var(--border);
+}
+
+.step-name{
+  font-size:14px;
+}
+
+.step-result{
+  color:var(--text-secondary);
+  font-size:13px;
+}
+
+.timeline-empty{
+  margin-top:20px;
+  color:var(--text-secondary);
+}

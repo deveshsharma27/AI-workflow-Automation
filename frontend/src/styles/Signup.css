@@ -1,0 +1,96 @@
+/* ================================
+   Signup Page Styles
+   Extends auth-layout from Login.css
+   ================================ */
+
+/* Password strength indicator */
+.password-strength {
+  margin-top: 8px;
+}
+
+.strength-bar-track {
+  height: 3px;
+  background: var(--clr-border);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.strength-bar-fill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.4s ease, background 0.4s ease;
+}
+
+.strength-label {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Terms checkbox */
+.terms-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.78rem;
+  color: var(--clr-text-secondary);
+  cursor: pointer;
+  line-height: 1.5;
+}
+
+.terms-label input[type="checkbox"] {
+  accent-color: var(--clr-accent);
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Name field icon override */
+.icon-user {
+  font-size: 13px;
+}
+
+/* Signup brand panel variant */
+.signup-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  z-index: 1;
+}
+
+.signup-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.step-number {
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--clr-accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  color: var(--clr-accent);
+  flex-shrink: 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+.step-text strong {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--clr-text-primary);
+  margin-bottom: 2px;
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+.step-text span {
+  font-size: 0.72rem;
+  color: var(--clr-text-muted);
+}

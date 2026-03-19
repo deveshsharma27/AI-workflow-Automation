@@ -1,0 +1,268 @@
+/* ================================
+   Workflow Detail / Edit Page
+   ================================ */
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 20px;
+  align-items: start;
+}
+
+/* Tab bar */
+.tab-bar {
+  display: flex;
+  border-bottom: 1px solid var(--clr-border);
+  margin-bottom: 24px;
+  gap: 0;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--clr-text-muted);
+  font-size: 0.82rem;
+  font-family: var(--font-mono);
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+  margin-bottom: -1px;
+}
+
+.tab-btn:hover { color: var(--clr-text-secondary); }
+
+.tab-btn.active {
+  color: var(--clr-accent);
+  border-bottom-color: var(--clr-accent);
+}
+
+/* Info panel */
+.info-panel {
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  position: sticky;
+  top: 76px;
+}
+
+.info-panel-header {
+  padding: 16px 18px;
+  border-bottom: 1px solid var(--clr-border);
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--clr-text-primary);
+}
+
+.info-row {
+  padding: 12px 18px;
+  border-bottom: 1px solid var(--clr-border);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.info-row:last-child { border-bottom: none; }
+
+.info-row-label {
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--clr-text-muted);
+  font-family: var(--font-mono);
+}
+
+.info-row-value {
+  font-size: 0.82rem;
+  color: var(--clr-text-primary);
+  font-family: var(--font-mono);
+  word-break: break-all;
+}
+
+/* Webhook URL box */
+.webhook-url-box {
+  background: var(--clr-bg);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-md);
+  padding: 10px 12px;
+  font-size: 0.72rem;
+  font-family: var(--font-mono);
+  color: var(--clr-accent);
+  word-break: break-all;
+  line-height: 1.5;
+  position: relative;
+}
+
+.copy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 8px;
+  padding: 5px 10px;
+  background: var(--clr-surface-2);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-sm);
+  color: var(--clr-text-secondary);
+  font-size: 0.7rem;
+  font-family: var(--font-mono);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.copy-btn:hover {
+  border-color: var(--clr-accent);
+  color: var(--clr-accent);
+}
+
+.copy-btn.copied {
+  border-color: var(--clr-success);
+  color: var(--clr-success);
+  background: var(--clr-success-bg);
+}
+
+/* Action buttons row */
+.detail-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.btn-run {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 18px;
+  background: var(--clr-accent);
+  border: none;
+  border-radius: var(--radius-md);
+  color: #080c10;
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.btn-run:hover {
+  background: var(--clr-accent-dim);
+  box-shadow: var(--shadow-glow);
+}
+
+.btn-run:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Save edit */
+.edit-save-bar {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--clr-border);
+}
+
+/* History mini table */
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.history-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  background: var(--clr-surface-2);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: border-color 0.15s;
+  text-decoration: none;
+}
+
+.history-item:hover { border-color: var(--clr-border-bright); }
+
+.history-item-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  flex-shrink: 0;
+}
+
+.history-item-icon.completed { background: var(--clr-success-bg); color: var(--clr-success); }
+.history-item-icon.running   { background: var(--clr-accent-glow); color: var(--clr-accent); }
+.history-item-icon.failed    { background: var(--clr-error-bg); color: var(--clr-error); }
+
+.history-item-body { flex: 1; min-width: 0; }
+
+.history-item-time {
+  font-size: 0.72rem;
+  color: var(--clr-text-secondary);
+  font-family: var(--font-mono);
+}
+
+.history-item-duration {
+  font-size: 0.65rem;
+  color: var(--clr-text-muted);
+  font-family: var(--font-mono);
+}
+
+/* Step node in edit view */
+.edit-step-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.edit-step-card {
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+
+.edit-step-card:focus-within {
+  border-color: var(--clr-accent);
+}
+
+.edit-step-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 14px;
+  background: var(--clr-surface-2);
+  border-bottom: 1px solid var(--clr-border);
+}
+
+.drag-handle {
+  color: var(--clr-text-muted);
+  cursor: grab;
+  font-size: 14px;
+  padding: 0 2px;
+  user-select: none;
+}
+
+.drag-handle:active { cursor: grabbing; }
+
+.edit-step-body {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (max-width: 1024px) {
+  .detail-grid { grid-template-columns: 1fr; }
+  .info-panel { position: static; }
+}
