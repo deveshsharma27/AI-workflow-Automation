@@ -11,14 +11,26 @@ const app = express();
 
 // ✅ CHANGE 1 — CORS updated
 // Allows both local dev (localhost:5173) and your Netlify production URL
+import cors from "cors";
+
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://workflow-automationwithai.netlify.app",
+];
+
 app.use(cors({
-  origin: [
-    "http://localhost:5173",
-    process.env.FRONTEND_URL,
-  ].filter(Boolean),
+  origin: function (origin, callback) {
+    if (
+      !origin || // allow non-browser requests
+      allowedOrigins.includes(origin) ||
+      origin.endsWith(".netlify.app") // 🔥 THIS FIX
+    ) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
   credentials: true,
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization"],
 }));
 
 app.use(express.json());
