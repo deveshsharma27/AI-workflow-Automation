@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
 import '../styles/Login.css'
-import '../styles/signup.css'
+import '../styles/Signup.css'
 
 function getPasswordStrength(password) {
   if (!password) return { score: 0, label: '', color: '' }
