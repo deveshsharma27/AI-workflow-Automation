@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import AppShell from '../components/Appshell'
-import WorkflowCard from '../components/workflowCard.jsx';
+import WorkflowCard from "../components/WorkflowCard";
 
 import { workflowAPI } from '../utils/api'
 import '../styles/Workflows.css'
