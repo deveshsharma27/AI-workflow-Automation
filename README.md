@@ -13,7 +13,7 @@ A full-stack automation platform that processes customer support tickets and e-c
 
 ### Dashboard
 <!-- Replace the line below with your dashboard screenshot -->
-![Dashboard](ScreenShot\dash.png)
+![Dashboard](ScreenShot/dash.png)
 
 ```
 📸 DASHBOARD SCREENSHOT.
@@ -23,7 +23,7 @@ A full-stack automation platform that processes customer support tickets and e-c
 
 ### Workflow Builder
 
-![Workflow Builder](ScreenShot\workflow.png)
+![Workflow Builder](ScreenShot/workflow.png)
 ```
 📸 WORKFLOW BUILDER SCREENSHOT
 ```
@@ -32,7 +32,7 @@ A full-stack automation platform that processes customer support tickets and e-c
 
 ### Execution Monitor (Live Timeline)
 
-![Execution Monitor](ScreenShot\Execution.png)
+![Execution Monitor](ScreenShot/Execution.png)
 ```
 📸 EXECUTIONS PAGE SCREENSHOT
 ```
@@ -42,7 +42,7 @@ A full-stack automation platform that processes customer support tickets and e-c
 ### Webhook Tester
 <!-- Replace the line below with your webhooks page screenshot -->
 <!-- Example: ![Webhooks](ScreenShot\webhook.png) -->
-![Webhooks](ScreenShot\webhook.png)
+![Webhooks](ScreenShot/webhook.png)
 ```
 📸 WEBHOOKS PAGE SCREENSHOT.
 ```
@@ -199,7 +199,7 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 <!-- INSERT SCREENSHOT: Create Workflow page with steps added -->
 <!-- Example: ![Create Workflow](ScreenShot\createWork.png) -->
-![Create Workflow](ScreenShot\createWork.png)
+![Create Workflow](ScreenShot/createWork.png)
 ```
 📸 CREATE WORKFLOW SCREENSHOT
 ```
@@ -226,7 +226,7 @@ Go to **Executions → Trigger Workflow**, select a workflow, edit the payload, 
 
 <!-- INSERT SCREENSHOT: Trigger modal with payload -->
 <!-- Example: ![Trigger Modal](ScreenShot\trigger.png) -->
-![Trigger Modal](ScreenShot\trigger.png)
+![Trigger Modal](ScreenShot/trigger.png)
 ```
 📸 TRIGGER MODAL SCREENSHOT.
 ```
